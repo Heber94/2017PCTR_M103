@@ -50,6 +50,9 @@ public class Ball {
 		//TODO Check postcondition	
 	}
 
+	/**
+	 * Metodo que comprueba que no se sale de los limites del tablero.
+	 */
 	public void aserciones() {
 		assert x >= Board.LEFTBOARD && x <= Board.RIGHTBOARD
 		&& y >= Board.TOPBOARD && y <= Board.BOTTOMBOARD;
