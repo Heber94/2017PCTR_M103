@@ -31,7 +31,7 @@ public class Ball {
 		}
 		x += dx;   
 		y += dy;
-		//TODO Check postcondition
+		aserciones();
 	}
 
 	public void reflect() {
