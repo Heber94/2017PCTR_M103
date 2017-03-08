@@ -88,7 +88,7 @@ public class Billiards extends JFrame {
 			}
 
 		}
-	}//Prueba
+	}
 
 	public static void main(String[] args) {
 		new Billiards();
