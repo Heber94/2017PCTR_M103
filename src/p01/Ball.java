@@ -18,6 +18,7 @@ public class Ball {
 		y = Billiards.Height/2-16;
 		v = 5;
 		fi =  Math.random() * Math.PI * 2;
+		aserciones();
 	}
 
 	public void move() {
@@ -30,7 +31,7 @@ public class Ball {
 		}
 		x += dx;   
 		y += dy;
-		//TODO Check postcondition
+		aserciones();
 	}
 
 	public void reflect() {
@@ -49,6 +50,14 @@ public class Ball {
 		//TODO Check postcondition	
 	}
 
+	/**
+	 * Metodo que comprueba que no se sale de los limites del tablero.
+	 */
+	public void aserciones() {
+		assert x >= Board.LEFTBOARD && x <= Board.RIGHTBOARD
+		&& y >= Board.TOPBOARD && y <= Board.BOTTOMBOARD;
+	}
+	
 	public int getX() {
 		return (int)x;
 	}

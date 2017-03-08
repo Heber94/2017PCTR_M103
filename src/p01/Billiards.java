@@ -22,8 +22,8 @@ public class Billiards extends JFrame {
 
 	private Board board;
 
-	// TODO update with number of group label. See practice statement.
-	private final int N_BALL = 6; //HECHO
+
+	private final int N_BALL = 6; 
 	private Ball[] balls;
 	
 	private Thread[] hilos;
@@ -53,19 +53,19 @@ public class Billiards extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(Width, Height);
 		setLocationRelativeTo(null);
-		setTitle("Pr√°ctica programaci√≥n concurrente objetos m√≥viles independientes");
+		setTitle("Pr·ctica programaciÛn concurrente objetos mÛviles independientes");
 		setResizable(false);
 		setVisible(true);
 	}
 
 	private void initBalls() {
-		// TODO init balls
+
 		balls = new Ball[N_BALL];
 		for (int i = 0; i < N_BALL; i++) {
 			balls[i] = new Ball();
 			board.setBalls(balls);
 		}
-		//HECHO
+
 	}
 
 	private class StartListener implements ActionListener {
