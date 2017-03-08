@@ -3,7 +3,7 @@ package p01;
 import java.awt.Image;
 import javax.swing.ImageIcon; 
 public class Ball {
-	private String Ball = "Ball.png"; 
+	private String Ball = "ball.png"; 
 
 	private double x,y,dx,dy;
 	private double v,fi;
